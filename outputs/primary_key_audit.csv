@@ -1,0 +1,6 @@
+table,primary_key,null_keys,duplicate_keys,unique_keys,row_count,unique_ok
+patient_journey,patient_id,0,0,1500,1500,True
+provider_master,provider_id,0,0,30,30,True
+communication_logs,communication_id,0,0,6025,6025,True
+treatment_outcomes,patient_id,0,0,554,554,True
+country_reference,country,0,0,12,12,True

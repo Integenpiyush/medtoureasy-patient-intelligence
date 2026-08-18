@@ -1,0 +1,9 @@
+area,finding,severity,recommended_control
+SQLite schema,All 5 tables have columns declared as TEXT; numeric/date semantics are not enforced at DB schema level.,Governance risk,Cast numeric/date fields in production queries and consider typed schema migration.
+SQLite constraints,PRAGMA foreign_keys=0; no declared indexes/foreign keys were found.,Governance risk,Add PK/FK constraints and indexes in a production schema.
+patient_journey.satisfaction_score,946 missing values (63.1%). Missingness occurs only for non-completed cases.,Structural missingness,Treat as post-treatment outcome; do not impute into pre-treatment ML features.
+communication_logs.response_delay_hours,1413 missing values (23.5%). Every missing value corresponds to response_sent=0.,Structural missingness,Retain as null when no response was sent; do not treat as zero response time.
+Funnel tracking,229 completed patients have quote_shared=0.,Stage integrity anomaly,Audit quote capture; report raw flags and a strict sequential funnel separately.
+Drop-off coding,350 rows are explicitly coded as drop-offs; consultation non-conversion is 516 cases.,Definition mismatch,Keep both definitions: coded drop-off and stage-based non-conversion.
+Financial reconciliation,patient_journey revenue/cost exactly reconcile to treatment_outcomes for all 554 completed patients; gross margin formula also reconciles.,No anomaly,Use treatment_outcomes as outcome-level audit source.
+Treatment timing,0 treatment dates precede inquiry dates.,No anomaly,No pre-inquiry treatment dates were detected.

@@ -1,0 +1,7 @@
+metric,patient_journey_value,treatment_outcomes_value,reconciled
+Completed patient count,554,554,1
+Completed revenue total,248325245,248325245,True
+Completed service cost total,136810889,136810889,True
+Gross margin formula,111514356,111514356,True
+Completed patients with nonzero revenue,554,554,True
+Incomplete patients with nonzero revenue,0,0,True

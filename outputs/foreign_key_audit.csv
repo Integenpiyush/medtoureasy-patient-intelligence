@@ -1,0 +1,7 @@
+relationship,orphan_count
+patient_journey.provider_id -> provider_master.provider_id,0
+patient_journey.country -> country_reference.country,0
+communication_logs.patient_id -> patient_journey.patient_id,0
+communication_logs.provider_id -> provider_master.provider_id,0
+treatment_outcomes.patient_id -> patient_journey.patient_id,0
+treatment_outcomes.provider_id -> provider_master.provider_id,0

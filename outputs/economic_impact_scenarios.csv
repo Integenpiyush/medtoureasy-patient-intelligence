@@ -1,0 +1,9 @@
+metric,inr,basis
+Observed gross revenue,248325245,Observed
+Observed gross margin,111514356,Observed
+Drop-off estimated case-value exposure,166511306,"Observed case value, not guaranteed revenue"
+Top 20% of coded drop-offs by case value,54398190,Observed case value
+5% recovery scenario,8325565,Scenario: 5% of drop-off case value converts
+10% recovery scenario,16651131,Scenario: 10% of drop-off case value converts
+10% recovery scenario margin,7477452,Scenario using 44.9% observed completed-case margin rate
+20% recovery scenario,33302261,Scenario: 20% of drop-off case value converts
