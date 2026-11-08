@@ -6,6 +6,12 @@
 [![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Tests: 11 Passed](https://img.shields.io/badge/Pytest-11%20Passed-2EA44F?logo=pytest&logoColor=white)](tests/test_pipeline.py)
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://medtoureasy-patient-intelligence.streamlit.app/)
+
+> 🌐 **Live Interactive Dashboard**: **[https://medtoureasy-patient-intelligence.streamlit.app/](https://medtoureasy-patient-intelligence.streamlit.app/)**  
+> 🚀 **Direct 1-Click Deploy Link**: **[Launch instantly on Streamlit Community Cloud](https://share.streamlit.io/deploy?repository=Integenpiyush/medtoureasy-patient-intelligence&branch=main&mainModule=dashboard/app.py)**  
+> 💻 **Local Port (Currently Active)**: `http://localhost:8503`
+
 An end-to-end **Healthcare Operations Data Science, SQL Analytics & Machine Learning** system analyzing **1,500 international patient journeys**, **6,025 communication touchpoints**, **30 partner hospitals**, **15 care coordinators**, and **12 source countries**.
 
 Built to answer executive decisions on **funnel drop-off leakage**, **country-specific SLA adherence**, **partner hospital benchmarking**, **pre-treatment completion risk scoring**, **patient persona segmentation**, and **gross-margin recovery scenarios**.

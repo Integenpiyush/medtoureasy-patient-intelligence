@@ -447,6 +447,13 @@ def render_dashboard():
                 )
                 fig_dist.add_vline(x=selected_t, line_dash="dash", line_color="red", annotation_text=f"Threshold {selected_t}")
                 st.plotly_chart(fig_dist, use_container_width=True)
+        elif (ROOT / "outputs" / "figures" / "05_ml_roc_and_feature_importance.png").exists():
+            st.markdown("---")
+            st.subheader("ROC Curve & Top Predictive Drivers (Precomputed Test Evaluation)")
+            st.image(
+                str(ROOT / "outputs" / "figures" / "05_ml_roc_and_feature_importance.png"),
+                use_container_width=True,
+            )
 
     elif page == "6. Patient Personas & Scenarios":
         st.title("👥 K-Means Patient Personas & Actionable Workflows")
@@ -476,6 +483,17 @@ def render_dashboard():
                     color="persona",
                     hover_data=["patient_id", "country", "treatment_category", "intent_score"],
                     title="Patient Personas: Engagement Score vs. Estimated Case Value (INR)",
+                )
+                st.plotly_chart(fig_p2, use_container_width=True)
+            else:
+                fig_p2 = px.bar(
+                    prof,
+                    x="persona",
+                    y="gross_margin_inr",
+                    color="persona",
+                    text=prof["gross_margin_inr"].map(lambda v: f"₹{v/1e6:.2f}M"),
+                    title="Realized Gross Margin by Patient Persona (INR)",
+                    labels={"gross_margin_inr": "Gross Margin (₹)", "persona": "Persona"},
                 )
                 st.plotly_chart(fig_p2, use_container_width=True)
 
