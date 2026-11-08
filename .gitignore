@@ -1,0 +1,28 @@
+# Raw patient-level healthcare datasets (excluded from public repo by default)
+data/*.csv
+data/*.db
+data/*.pdf
+!data/README.md
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS / IDE artifacts
+.DS_Store
+.idea/
+.vscode/
+*.swp
